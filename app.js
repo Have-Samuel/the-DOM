@@ -1,15 +1,5 @@
-// const allItemElements = document.querySelectorAll('li');
-const allItemElements = document.getElementsByTagName('li');
+const ul = document.body.firstElementChild.nextElementSibling;
 
-for (const alEl of allItemElements) {
-  console.dir(alEl);
-}
+const fstLi = ul.firstElementChild;
 
-const h1 = document.getElementById('main-title');
-h1.textContent = 'Some other text!';
-h1.style.color = 'brown';
-h1.style.backgroundColor = 'pink';
-
-const li = document.querySelector('li:last-of-type');
-
-li.textContent = li.textContent + ' (Change)';
+console.log(fstLi);
